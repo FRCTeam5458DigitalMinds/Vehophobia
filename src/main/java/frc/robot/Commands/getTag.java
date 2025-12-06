@@ -18,11 +18,12 @@ public class getTag extends Command
 
     public void execute()
     {
+        //If see specfic tag, turn off LED
         if(driveTrain.getLastKnownTag() == 21){
-            driveTrain.LEDon();
+            driveTrain.LEDoff();
         }
         else{
-            driveTrain.LEDoff();
+            driveTrain.LEDon();
         }
     }
 }
